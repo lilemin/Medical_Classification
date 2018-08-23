@@ -25,6 +25,6 @@ image | origin dataset without augument
 label | 14
 trainable | logits, block4
 ## Experiments1
-Item | Train loss |Eval loss |Train acc |Eval acc
------|------------|----------|----------|--------
-clone_2_lr_0.1_batch_64_fix_rmsprop|
+Item | Train loss |Eval loss |Train acc |Eval acc| Best model| 备注
+-----|------------|----------|----------|--------|------------|-----
+clone_2_lr_0.1_batch_64_fix_rmsprop|0.7404|1.046|68.03|64.52|3584|准确率可以比前面的实验都提升得快，但2个测试后，就过拟合
