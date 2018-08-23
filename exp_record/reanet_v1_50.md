@@ -25,9 +25,10 @@ image | origin dataset without augument
 label | 14
 trainable | logits, block4
 ## Experiments1
-Item | Train loss |Eval loss |Train acc |Eval acc| Best model| 备注
------|------------|----------|----------|--------|------------|-----
-clone_2_lr_0.1_batch_64_fix_rmsprop|0.7404|1.046|68.03|64.52|3584|准确率可以比前面的实验都提升得快，但2个测试后，就过拟合
-clone_2_lr_0.01_batch_64_fix_rmsprop|0.4328|1.681|68.50|62.45|3407|严重过拟合
-clone_2_lr_0.001_batch_64_fix_rmsprop|0.4215|0.8843|75.42|66.65|14.35k|
-clone_2_lr_0.0001_batch_64_fix_rmsprop|
+Item | Finetune model|Train loss |Eval loss |Train acc |Eval acc| Best model| 备注
+-----|------|------|----------|----------|--------|------------|-----
+clone_2_lr_0.1_batch_64_fix_rmsprop||0.7404|1.046|68.03|64.52|3584|准确率可以比前面的实验都提升得快，但2个测试后，就过拟合
+clone_2_lr_0.01_batch_64_fix_rmsprop||0.4328|1.681|68.50|62.45|3407|严重过拟合
+clone_2_lr_0.001_batch_64_fix_rmsprop||0.4215|0.8843|75.42|66.65|14.35k|
+clone_2_lr_0.0001_batch_64_fix_rmsprop||1.120|0.8362|59.04|62.97|24.00k|欠拟合
+clone_2_lr_0.005_batch_64_fix_rmsprop|clone_2_lr_0.0001_batch_64_fix_rmsprop/model.ckpt-34794|
