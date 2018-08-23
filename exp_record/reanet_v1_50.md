@@ -32,3 +32,6 @@ clone_2_lr_0.01_batch_64_fix_rmsprop||0.4328|1.681|68.50|62.45|3407|严重过拟
 clone_2_lr_0.001_batch_64_fix_rmsprop||0.4215|0.8843|75.42|66.65|14.35k|
 clone_2_lr_0.0001_batch_64_fix_rmsprop||1.120|0.8362|59.04|62.97|24.00k|欠拟合
 clone_2_lr_0.005_batch_64_fix_rmsprop|clone_2_lr_0.0001_batch_64_fix_rmsprop/model.ckpt-34794|
+
+## Train block1_2_3_4 & logits
+clone_2_lr_0.01_batch_64_exp_0.6_10_rmsprop|
