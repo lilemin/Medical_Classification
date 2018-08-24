@@ -40,7 +40,8 @@ Step| Item | Finetune model | Train loss | Eval loss | Train acc | Eval acc| Bes
 ----|----|------|------|----------|----------|--------|------------|-----
 1|clone_2_lr_0.001_batch_64_exp_0.6_10_rmsprop | resnet_v1_50|0.7818 | 1.385 | 74 | 68.48 | 欠拟合
 2|clone_2_lr_0.001_batch_128_exp_rmsprop|resnet_v1_50|0.5393|0.9672|78.03|69.65|稍微欠拟合
-4|clone_2_lr_0.0001_batch_128_exp_rmsprop|resnet_v1_50
+4|clone_2_lr_0.0001_batch_128_exp_rmsprop|resnet_v1_50|/|/|/|/|效果不如意
+5|clone_2_lr_0.0001_batch_128_fix_rmsprop|resnet_v1_50|
 
 ## Train block1_2 & logits
 Step| Item | Finetune model | Train loss | Eval loss | Train acc | Eval acc| Best model| 备注
