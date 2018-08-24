@@ -34,8 +34,9 @@ clone_2_lr_0.0001_batch_64_fix_rmsprop||1.120|0.8362|59.04|62.97|24.00k|欠拟�
 clone_2_lr_0.005_batch_64_fix_rmsprop|clone_2_lr_0.0001_batch_64_fix_rmsprop/model.ckpt-34794|
 
 ## Train block1_2_3_4 & logits
-事实证明，多训练前面几个blocks，在达到68%准确率的前提下，会增加拟合程度，降低过拟合情况
-Item | Finetune model|Train loss |Eval loss |Train acc |Eval acc| Best model| 备注
+* 事实证明，多训练前面几个blocks，在达到68%准确率的前提下，会增加拟合程度，降低过拟合情况
+
+Item | Finetune model | Train loss | Eval loss | Train acc | Eval acc| Best model| 备注
 -----|------|------|----------|----------|--------|------------|-----
 clone_2_lr_0.01_batch_64_exp_0.6_10_rmsprop | resnet_v1_50|0.7818 | 1.385 | 74 | 68.48 | 欠拟合
 
