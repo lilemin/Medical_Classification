@@ -36,7 +36,8 @@ clone_2_lr_0.005_batch_64_fix_rmsprop|clone_2_lr_0.0001_batch_64_fix_rmsprop/mod
 ## Train block1_2_3_4 & logits
 * 事实证明，多训练前面几个blocks，在达到68%准确率的前提下，会增加拟合程度，降低过拟合情况
 
-Item | Finetune model | Train loss | Eval loss | Train acc | Eval acc| Best model| 备注
------|------|------|----------|----------|--------|------------|-----
-clone_2_lr_0.01_batch_64_exp_0.6_10_rmsprop | resnet_v1_50|0.7818 | 1.385 | 74 | 68.48 | 欠拟合
-
+Step| Item | Finetune model | Train loss | Eval loss | Train acc | Eval acc| Best model| 备注
+----|----|------|------|----------|----------|--------|------------|-----
+1|clone_2_lr_0.001_batch_64_exp_0.6_10_rmsprop | resnet_v1_50|0.7818 | 1.385 | 74 | 68.48 | 欠拟合
+2|clone_2_lr_0.001_batch_128_exp_rmsprop|resnet_v1_50|0.5393|0.9672|78.03|69.65|稍微欠拟合
+3|
