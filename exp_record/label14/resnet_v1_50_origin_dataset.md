@@ -61,5 +61,3 @@ pick |acc  | name
 
 
 
-
-
